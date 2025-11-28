@@ -210,10 +210,22 @@ a {
 
 
 /* Show menu */
-
+.show-menu {
+	transform: translateY(5rem);
+	opacity: 1;
+	pointer-events: initial;
+}
 
 /* Show icon */
+.show-icon .nav__burger {
+	opacity: 0;
+	transform: rotate(-90deg);
+}
 
+.show-icon .nav__close {
+	opacity: 1;
+	transform: rotate(-90deg);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
