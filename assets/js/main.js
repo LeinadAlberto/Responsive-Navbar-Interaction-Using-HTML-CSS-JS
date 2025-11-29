@@ -21,5 +21,10 @@ navEmail.addEventListener('click', () => {
     // Use the clipboard API to copy text
     navigator.clipboard.writeText(navCopy).then(() => {
         navText.innerHTML = 'Copied ✅'
+
+        // Restore the original text
+        setTimeout(() => {
+            navText.innerHTML = 'Copy email'
+        }, 2000)
     })
 })
